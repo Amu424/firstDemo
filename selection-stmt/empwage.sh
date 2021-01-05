@@ -1,6 +1,6 @@
 #!/bin/bash -x
 isPresnt=1;
-randomCheck=$(( RANDOM ))
+randomCheck=$(( RANDOM%2 ))
 echo $randomCheck;
 if [ $isPresnt -eq $randomCheck ]
 then 
@@ -8,7 +8,7 @@ echo "employee is present"
 empRatePerHr=20
 empHrs=8
 salary=$(($empHrs*$empRatePerHr))
-echo salary
+echo $salary
 echo $empRatePerHr
 echo $empHrs
 else
